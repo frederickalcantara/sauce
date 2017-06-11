@@ -1,0 +1,45 @@
+ body{
+ 	padding-top: 3.6em;
+ }
+
+.carousel .fill {
+	width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+
+}
+
+.carousel .item,
+.carousel .item.active,
+.carousel .carousel-inner {
+	width: 100%;
+	height: 30em;
+
+}
+
+.slogan {
+	font-size: 1.125em;
+}
+
+.pictures {
+	margin-bottom: 2em;
+}
+
+@media (max-width:768px){
+	.pics{margin-bottom: 1em;}
+	.pictures{margin-bottom: 0em;}
+}
+
+.learn {
+	color: #fff;
+}
+
+.fit {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.font {
+	color: #ddd;
+}
