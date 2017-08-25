@@ -2,23 +2,23 @@
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
-if($_SERVER['HTTP_HOST'] =='localhost:8888'){
+if($_SERVER['HTTP_HOST'] =='host'){
 //local:
-    $host='localhost';
-    $dbname='sauce';
-    $username='fred';
-    $password='Luffy1';
+    $host='host';
+    $dbname='db';
+    $username='username';
+    $password='password';
 
-} elseif($_SERVER['HTTP_HOST'] =='pbcs.us'){
+} elseif($_SERVER['HTTP_HOST'] =='host'){
    //remote
-    $host='localhost';
-    $dbname='falcanta_sauce';
-    $username='falcanta_freddya';
-    $password='Luffy1!';
+    $host='host';
+    $dbname='db';
+    $username='username';
+    $password='password!';
 
 }else{
     echo "unknown host: " . $_SERVER['HTTP_HOST'];
-}   
+}    
 
 
 $db = new PDO( "mysql:host=$host;dbname=$dbname", $username, $password );
